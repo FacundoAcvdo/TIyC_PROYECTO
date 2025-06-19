@@ -11,8 +11,7 @@ func enableCORS(w http.ResponseWriter) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	w.Header().Set("Access-Control-Expose-Headers", "ErrorDoble")
-	w.Header().Set("Access-Control-Expose-Headers", "Compressed-Size")
+	w.Header().Set("Access-Control-Expose-Headers", "ErrorDoble, Compressed-Size")
 }
 
 func handleHamming(w http.ResponseWriter, r *http.Request) {

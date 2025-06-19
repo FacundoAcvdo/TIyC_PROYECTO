@@ -33,7 +33,7 @@ function Comparador() {
     {!comparados && <Center width="100%" height="90vh">
         <Flex flexDirection="column" gap="5vw">
             <Flex flexDirection="row" >
-                <FileUpload.Root w="xl" maxW="xl" alignItems="stretch" maxFiles={1} accept={"text/*"} onFileAccept={(archivos) =>{ cargarArchivo(archivos, 1)}} className='item'>
+                <FileUpload.Root w="xl" maxW="xl" alignItems="stretch" maxFiles={1} onFileAccept={(archivos) =>{ cargarArchivo(archivos, 1)}} className='item'>
                     <FileUpload.HiddenInput />
                     <FileUpload.Dropzone>
                         <Icon size="md" color="fg.muted">
@@ -47,7 +47,7 @@ function Comparador() {
                     <FileUpload.List />
                 </FileUpload.Root>
 
-                <FileUpload.Root w="xl" maxW="xl" alignItems="stretch" maxFiles={1} accept={"text/*"} onFileAccept={(archivos) =>{ cargarArchivo(archivos, 2)}} className='item'>
+                <FileUpload.Root w="xl" maxW="xl" alignItems="stretch" maxFiles={1} onFileAccept={(archivos) =>{ cargarArchivo(archivos, 2)}} className='item'>
                     <FileUpload.HiddenInput />
                     <FileUpload.Dropzone>
                         <Icon size="md" color="fg.muted">

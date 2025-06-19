@@ -38,7 +38,7 @@ function Huffman() {
 
     setTamComprimido(parseInt(res.headers.get("Compressed-Size")))
 
-    if(tamComprimido == NaN){
+    if(isNaN(tamComprimido)){
       setTamComprimido(1)
     }
 
